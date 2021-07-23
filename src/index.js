@@ -10,7 +10,7 @@ function App() {
   const [lightOn, setLightOn] = useState(true);
 
   return (
-    <div className="App">
+    <div onClick={() => setLightOn(!lightOn)} className="App">
       {lightOn === false ? (
         <img src={white} alt="light off" />
       ) : (
