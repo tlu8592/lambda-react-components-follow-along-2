@@ -11,8 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={white} />
-      <img src={yellow} />
+      {lightOn === false ? <img src={white} /> : <img src={yellow} />}
     </div>
   );
 }
